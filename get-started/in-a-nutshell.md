@@ -290,13 +290,13 @@ service CatalogService @(path:'/browse') { // [!code focus]
 This time `cds watch` reacted with additional output like this:
 
 ```log
-[cds] - serving AdminService { at: '/admin' }
+[cds] - serving AdminService { path: '/odata/v4/admin' }
 [cds] - serving CatalogService { at: '/browse', impl: 'bookshop/srv/cat-service.js' }
 
 [cds] - server listening on { url: 'http://localhost:4004' }
 ```
 
-As you can see, the two service definitions have been compiled and generic service providers have been constructed to serve requests on the listed endpoints _/admin_ and _/browse_.
+As you can see, the two service definitions have been compiled and generic service providers have been constructed to serve requests on the listed endpoints _/odata/v4/admin_ and _/browse_.
 
 </div>
 
